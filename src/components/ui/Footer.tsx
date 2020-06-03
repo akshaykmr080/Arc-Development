@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, Theme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
 import Hidden from "@material-ui/core/Hidden";
@@ -16,7 +16,7 @@ interface Props {
   setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme: Theme) => ({
   footer: {
     backgroundColor: theme.palette.common["blue"],
     width: "100%",
